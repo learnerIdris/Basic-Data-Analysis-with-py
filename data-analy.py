@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import io
+
 
 # =======================================================
 # Task 1: Load and Explore the Dataset
