@@ -29,7 +29,7 @@ Date,Product Category,Region,Sales,Quantity
 
 try:
     # Load the dataset from the in-memory string
-    df = pd.read_csv(io.StringIO(data))
+    df = pd.read_csv("data.csv")
     print("Dataset loaded successfully.")
 
     # Display the first few rows to inspect the data
@@ -41,7 +41,6 @@ try:
     df.info()
 
     # Clean the dataset by dropping any rows with missing values.
-    # For this specific dataset, there are no missing values, but this is good practice.
     df_cleaned = df.dropna()
     print("\nDataset after cleaning (no rows dropped in this case):")
     df_cleaned.info()
