@@ -7,29 +7,10 @@ import seaborn as sns
 # Task 1: Load and Explore the Dataset
 # =======================================================
 
-# Creating a dummy dataset as a string to make the script self-contained.
-# In a real-world scenario, you would read this from a file.
-data = """
-Date,Product Category,Region,Sales,Quantity
-2023-01-01,Electronics,North,1200,5
-2023-01-02,Clothing,South,450,15
-2023-01-03,Electronics,North,2500,10
-2023-01-04,Home Goods,East,800,8
-2023-01-05,Electronics,West,1500,7
-2023-01-06,Clothing,North,600,20
-2023-01-07,Home Goods,South,1100,6
-2023-01-08,Electronics,East,3200,12
-2023-01-09,Clothing,West,750,25
-2023-01-10,Home Goods,North,950,9
-2023-01-11,Clothing,South,550,18
-2023-01-12,Home Goods,West,1300,4
-2023-01-13,Electronics,West,2800,11
-2023-01-14,Electronics,North,1800,9
-"""
 
 try:
     # Load the dataset from the in-memory string
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("BMW sales data (2010-2024).csv")
     print("Dataset loaded successfully.")
 
     # Display the first few rows to inspect the data
